@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="main_container">
+        <div id="nav_bar">
+            <img class="logo" src="Playstation_img/logo.png">
+            <ul id="menuList">
+                <li><a href="#">Game controllers</a></li>
+                <li><a href="#">VR Accessories</a></li>
+                <li><a href="#">Media Remotes</a></li>
+                <li><a href="#">Others</a></li>
+            </ul>
+            <img src="playstation_img/menu.png" class="nav_bar_img" onclick="togglemenu()">
+        </div>
+
+        <div class="main_section">
+            <div class="first_container">
+                <div class="first_container_margin">
+                <h2>PS4 V2<br>Dualshock 4</h2>
+                <p class="first_paragraph color">Wireless controller for Playstation 4</p>
+                <p class="sub color"><sub>(Compatible generic)</sub></p>
+                <h3>$32.50</h3>
+                <button type="button">
+                    <p>Buy Me</p><img class="arrow" src="Playstation_img/arrow.png" alt="arrow">
+                </button>
+            </div>
+        </div>
+            <div class="second_container">
+                <img class="controller" src="Playstation_Img/controller.png" alt="controller">
+                <div class="controller_background"></div>
+                <div class="add_to_cart_btn">
+                    <img class="add" src="Playstation_img/add.png" alt="add-to-cat-btn">
+                    <p class="add_btn">Add to Cart</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <img src="Playstation_Img/fb.png" alt="facebook-icon">
+            <img src="Playstation_Img/tw.png" alt="facebook-icon">
+            <img src="Playstation_Img/ig.png" alt="facebook-icon">
+        </footer>
+    </div>
+    <script>
+
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "130px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
+
+    </script>
+</body>
+</html>
